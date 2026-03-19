@@ -16,7 +16,7 @@ APP_DIR=/home/ec2-user/dice
 mkdir -p $APP_DIR
 
 # Clone your application repository (replace with your repo URL)
-git clone !!!Your clone URL here!!! $APP_DIR
+git clone https://github.com/saultcollege-csd215/aws-project-26w-urgen-lama.git $APP_DIR
 
 cd $APP_DIR
 # Setup Python virtual environment and install dependencies
