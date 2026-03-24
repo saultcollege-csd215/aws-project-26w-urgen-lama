@@ -1,1 +1,27 @@
-name: EC2 Deployment
+name: Deploy EC2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-flask:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: aws-project
+
+      - name: SSH and Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 13.218.102.168
+          username: ec2-user
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            cd ~/aws-project-26w-urgen-lama
+            git pull origin aws-project
+            bash resources/deploy_ec2.sh
+
+            
