@@ -22,3 +22,54 @@
                 }
             ],
 :
+
+{
+    "Configuration": {
+        "FunctionName": "csd215-lambda",
+        "FunctionArn": "arn:aws:lambda:us-east-1:381866396480:function:csd215-lambda",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::381866396480:role/LabRole",
+        "Handler": "lambda_app.main",
+        "CodeSize": 2768,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-03-24T14:46:09.000+0000",
+        "CodeSha256": "Rgnzfarkkr/rgp7fvJK/dcJaCNj/kmAWZJ8kv/Nz+zU=",
+:...skipping...
+{
+    "Configuration": {
+        "FunctionName": "csd215-lambda",
+        "FunctionArn": "arn:aws:lambda:us-east-1:381866396480:function:csd215-lambda",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::381866396480:role/LabRole",
+        "Handler": "lambda_app.main",
+        "CodeSize": 2768,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-03-24T14:46:09.000+0000",
+        "CodeSha256": "Rgnzfarkkr/rgp7fvJK/dcJaCNj/kmAWZJ8kv/Nz+zU=",
+        "Version": "$LATEST",
+        "VpcConfig": {
+            "SubnetIds": [
+                "subnet-0ad0f4559bf8d2d08"
+            ],
+            "SecurityGroupIds": [
+                "sg-0d5d9d78a2f7fca5a"
+            ],
+            "VpcId": "vpc-0a7323ae4eb5ecc2e",
+            "Ipv6AllowedForDualStack": false
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "3777b8a0-0b62-4666-8e82-bc3515f97752",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+:
