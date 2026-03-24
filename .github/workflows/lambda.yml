@@ -1,7 +1,7 @@
 name: Lambda Deployment Workflow
 
 on:
-  workflow_dispatch: # Allows this to be triggered by the test.yml workflow
+  workflow_dispatch: 
 
 jobs:
   deploy-lambda:
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: lab # Ensures it pulls from your specific lab branch
+          ref: lab 
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -19,7 +19,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
-          aws-region: us-east-1 # Hardcoded here as per standard Lab requirements
+          aws-region: us-east-1 
 
       - name: Set Script Permissions
         run: chmod +x resources/deploy_lambda.sh
