@@ -25,4 +25,4 @@ jobs:
         run: chmod +x resources/deploy_lambda.sh
 
       - name: Run Deployment Script
-        run: bash -x resources/deploy_lambda.sh
+        run: ./resources/deploy_lambda.sh
