@@ -31,5 +31,4 @@ jobs:
         if: success()
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: Deploy Lambda 
-          token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: Deploy EC2 
