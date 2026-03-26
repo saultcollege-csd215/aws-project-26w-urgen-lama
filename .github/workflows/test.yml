@@ -31,4 +31,4 @@ jobs:
         if: success()
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: Deploy EC2 
+          workflow: ec2.yml
