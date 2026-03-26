@@ -16,10 +16,7 @@ jobs:
       - name: SSH and Deploy to EC2
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 13.218.102.168
+          host: 44.213.128.0
           username: ec2-user
           key: ${{ secrets.EC2_KEY }}
-          script: |
-            cd ~/aws-project-26w-urgen-lama
-            git pull origin aws-project
-            bash resources/deploy_ec2.sh
+          script: bash dice/resources/deploy_ec2.sh

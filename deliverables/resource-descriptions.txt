@@ -1,0 +1,111 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "source",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "timestamp",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "dice-rolls",
+        "KeySchema": [
+            {
+                "AttributeName": "source",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "timestamp",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2026-03-12T04:07:26.559000+00:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 571,
+        "ItemCount": 4,
+        "TableArn": "arn:aws:dynamodb:us-east-1:381866396480:table/dice-rolls",
+        "TableId": "2e6792df-49b1-4f88-b255-099dd775d772",
+:
+
+[
+    [
+        {
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "efbed5a5-7908-4c6c-92c7-9e080659d985",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [],
+            "StateReason": {
+                "Code": "Client.UserInitiatedShutdown",
+                "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+            },
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "csd215-flask-instance"
+                }
+            ],
+:
+
+{
+    "Configuration": {
+        "FunctionName": "csd215-lambda",
+        "FunctionArn": "arn:aws:lambda:us-east-1:381866396480:function:csd215-lambda",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::381866396480:role/LabRole",
+        "Handler": "lambda_app.main",
+        "CodeSize": 2768,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-03-24T14:46:09.000+0000",
+        "CodeSha256": "Rgnzfarkkr/rgp7fvJK/dcJaCNj/kmAWZJ8kv/Nz+zU=",
+:...skipping...
+{
+    "Configuration": {
+        "FunctionName": "csd215-lambda",
+        "FunctionArn": "arn:aws:lambda:us-east-1:381866396480:function:csd215-lambda",
+        "Runtime": "python3.9",
+        "Role": "arn:aws:iam::381866396480:role/LabRole",
+        "Handler": "lambda_app.main",
+        "CodeSize": 2768,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-03-24T14:46:09.000+0000",
+        "CodeSha256": "Rgnzfarkkr/rgp7fvJK/dcJaCNj/kmAWZJ8kv/Nz+zU=",
+        "Version": "$LATEST",
+        "VpcConfig": {
+            "SubnetIds": [
+                "subnet-0ad0f4559bf8d2d08"
+            ],
+            "SecurityGroupIds": [
+                "sg-0d5d9d78a2f7fca5a"
+            ],
+            "VpcId": "vpc-0a7323ae4eb5ecc2e",
+            "Ipv6AllowedForDualStack": false
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "3777b8a0-0b62-4666-8e82-bc3515f97752",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+:
